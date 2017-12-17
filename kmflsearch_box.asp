@@ -21,11 +21,11 @@
               <A href="psearchj_vip.asp?job=政治&flag=1">政治</A>
               <A href="psearchj_vip.asp?job=作文&flag=1">作文</A>
               <A href="psearchj_vip.asp?job=奥数&flag=1">奥数</A>
-              <!--<A href="psearchj_vip.asp?job=日语&flag=1">日语</A>
+              <A href="psearchj_vip.asp?job=日语&flag=1">日语</A>
               <A href="psearchj_vip.asp?job=德语&flag=1">德语</A>
               <A href="psearchj_vip.asp?job=法语&flag=1">法语</A>
               <A href="psearchj_vip.asp?job=韩语&flag=1">韩语</A>
-              <A href="psearchj_vip.asp?job=俄语&flag=1">俄语</A>-->
+              <A href="psearchj_vip.asp?job=俄语&flag=1">俄语</A>
               <A href="psearchj_vip.asp?job=雅思&flag=1">雅思</A>
               <A href="psearchj_vip.asp?job=托福&flag=1">托福</A>
               <A href="psearchj_vip.asp?job=计算机&flag=1">计算机</A>

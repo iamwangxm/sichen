@@ -1,9 +1,6 @@
-
-
 <!--#include file="conn.asp"-->
 <!--#include file="info.asp"-->
 <!--#include file="unhtml.asp"-->
-
 <!--#include file="art1_box.asp"-->
 
 <title> <%=webname%></title>
