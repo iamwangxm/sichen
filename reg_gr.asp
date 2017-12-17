@@ -1,7 +1,6 @@
 <!--#include file="conn.asp"-->
 <!--#include file="info.asp"-->
 <html>
-
 <head>
 <meta http-equiv="Content-Language" content="zh-cn">
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
@@ -33,7 +32,6 @@ type=text/javascript></SCRIPT>
 	for i=1 to rs_s.recordcount
 %>
 	selects['<%=rs_s("id")%>']=new Array(
-
 new Option('选择区县','0'),
 <%
 	set rs_s1=server.createobject("adodb.recordset")
@@ -67,7 +65,7 @@ rs_s.close
 set rs_s=nothing
 %>
 	function chsel(){
-		with (document.form100){
+		with (document.form1){
 			if(city.value) {
 				town.options.length=0;
 				for(var i=0;i<selects[city.value].length;i++){
