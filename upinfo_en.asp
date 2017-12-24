@@ -5,7 +5,7 @@ response.write "<script language=JavaScript>" & chr(13) & "alert('µÇÂ¼³¬Ê±!! ÇëÖ
 Response.End
 end if
 
-if len(request("name"))>10then
+if len(request("name"))>10 then
 response.write "<script language=JavaScript>" & chr(13) & "alert('ÐÕÃû²»ÄÜ³¬¹ý10¸ö×Ö£¡');" & "history.back()" & "</script>" 
 Response.End
 end if
@@ -102,7 +102,8 @@ set rs=nothing
 set conn=nothing
 Response.Cookies("e_fullness")="ok"
 Response.Cookies("e_fullness").expires=(now+1/6) '±£´æ4Ð¡Ê±
-'Response.Write request("mycity2")
+Response.Write request("mycity2")
+response.end
 response.write "<script language=JavaScript>" & chr(13) & "alert('ÐÅÏ¢¸üÐÂ³É¹¦£¡');" &"window.location.href='control.asp'"& "</script>" 
 
 %>

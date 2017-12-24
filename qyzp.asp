@@ -130,7 +130,7 @@ for ii=1 to 15
 								  </td>
 										<td height="30" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; " ><%
                   set rss=server.createobject("adodb.recordset")
-sqls="select * from city where cityNo="&int(rs("city"))
+sqls="select * from en_city where id="&int(rs("city"))
 rss.open sqls,conn,1,1
 if rss.eof then
 
@@ -139,21 +139,21 @@ if rs("city") =0 then
 response.write "²»Ïê"
 end if
                Cityid=rss("id")
-               city=rss("cityname")
+               city=rss("shiName")
                 rss.close
                 set rss=nothing
                 %>
 										  <%
-                  set rss=server.createobject("adodb.recordset")
-sqls="select * from town where Cityid="&Cityid&" and  TownNo="&int(rs("town"))
-rss.open sqls,conn,1,1
-if rss.eof then
+                  set rssx=server.createobject("adodb.recordset")
+sqlsx="select * from town where id="&int(rs("town"))
+rssx.open sqls,conn,1,1
+if rssx.eof then
 
 end if
 
-               town=rss("townname")
-                rss.close
-                set rss=nothing
+               town=rssx("shiName")
+                rssx.close
+                set rssx=nothing
                 %>
 									    <%=unhtml(city)%><%=unhtml(town)%></td>
 										<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; " width="70" height="30" align="center" ><%=unhtml(rs("sex"))%></td>
