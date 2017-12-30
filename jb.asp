@@ -37,7 +37,7 @@ end if
           
           <tr>
             <td height="15" align="center"><div align="right">
-              <div align="left"><span style="font-weight: bold">举报内容</span>[请说明被举报者违规现象、行为或受害人受害事实或其它违规方面，<span style="color: #FF3333">并请提供其在本站发布信息的页面地址</span>（请复制浏览器地址栏中地址并附于举报内容中）]&nbsp;如果有图片证据请同步发送到本站邮箱<span style="font-weight: bold"><a href="mailto:1677676755@qq.com">1677676755@qq.com</a></span> 标题请注明虚假信息举报图片证据。</div>
+              <div align="left"><span style="font-weight: bold">举报内容</span>[请说明被举报者违规现象、行为或受害人受害事实或其它违规方面，<span style="color: #FF3333">并请提供其在本站发布信息的页面地址</span>（请复制浏览器地址栏中地址并附于举报内容中）]&nbsp;如果有图片证据请同步发送到本站邮箱<span style="font-weight: bold"><a href="mailto:583164404@qq.com">583164404@qq.com</a></span> 标题请注明虚假信息举报图片证据。</div>
             </div></td>
             <td height="15" colspan="3" align="center"><div align="left">
               <textarea name="content" cols="65" rows="12" id="content" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"></textarea>

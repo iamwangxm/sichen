@@ -202,24 +202,7 @@ set rs_s=nothing
                    </tr>
                    <tr>
                            <td width="708"  valign="top">
-                                    <!--在校大学生教员 -->  <br/><br/>
-                                    <div class="rc-block2 voting-q">
-                                        <b class="tl"></b><b class="tr"></b>
-                                        <div class="outer">
-                                            <div class="inner">
-                                                <div class="hd"><h3><a href="" target="_blank">在校大学生教员</a></h3><a href="grqz2.asp" class="more" target="_blank">更多</a>
-                                                </div>
-                                                <div class="bd"><!--#include file="new_zy.asp"-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <b class="bl"></b><b class="br"></b>
-                                    </div>
-                           </td>
-                   </tr>
-                   <tr>
-                     <td  valign="top">
-                                    <!--学员 -->  <br/><br/>
+						   <!--学员 -->  <br/>
                                     <div class="rc-block2 voting-q">
                                         <b class="tl"></b><b class="tr"></b>
                                         <div class="outer">
@@ -230,8 +213,24 @@ set rs_s=nothing
                                                 </div>
                                             </div>
                                         </div>
-                                        <b class="bl"></b><b class="br"></b>
                                     </div>
+                           </td>
+                   </tr>
+                   <tr>
+                     <td  valign="top">
+                               
+                                    <!--在校大学生教员 -->  <br/>
+                                    <div class="rc-block2 voting-q">
+                                        <b class="tl"></b><b class="tr"></b>
+                                        <div class="outer">
+                                            <div class="inner">
+                                                <div class="hd"><h3><a href="" target="_blank">在校大学生教员</a></h3><a href="grqz2.asp" class="more" target="_blank">更多</a>
+                                                </div>
+                                                <div class="bd"><!--#include file="new_zy.asp"-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>     
                      </td>
                    </tr>  
                    

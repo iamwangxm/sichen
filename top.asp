@@ -28,7 +28,7 @@
 
 <table width="950" border="0" align="center" cellpadding="0" cellspacing="0" height=25>
 	<tr>
-	<td background="images/gray_bg.gif"><font color="#990000">【思辰家教网】，提供优秀的专业教师家教，大学生家教信息，是找家教的首选服务网站。 </font></td>
+	<td background="images/gray_bg.gif"><font color="#990000">【思辰家教网】上海首家免费的家教服务平台，是找家教的首选网站！客服电话：<b><%=tel%></b> </font></td>
     <td background="images/gray_bg.gif">
     <img src="images/collection_ico1.gif" border="0" align="absmiddle" /> <A onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.sichenedu.com/');return(false);" 
 href="javascript:">设为首页</A> &nbsp;&nbsp;<img src="images/collection_ico.gif" border="0" align="absmiddle" />

@@ -30,6 +30,27 @@ end if
 		<td height="25" align="center" background="images/title_bg_show.gif">
 		<b><a href="admin_index.asp">网站管理首页</a></b></td>
   </tr>
+  	<tr>
+		<td width="0" height="25" align="center" background="images/title_bg_show.gif">
+		<b><a href="admin_inuser.asp">学员管理</a></b></td>
+  </tr>
+  
+  	<tr>
+		<td width="0" height="25" align="center" background="images/title_bg_show.gif">
+		<b><a href="admin_inorder.asp">&nbsp;&nbsp;&nbsp;&nbsp;学员预约教员</a></b></td>
+  </tr>
+  
+    
+	<tr>
+		<td width="0" height="25" align="center" background="images/title_bg_show.gif">
+		<b><a href="admin_enuser.asp">教员管理</a></b></td>
+  </tr>
+
+  	<tr>
+		<td width="0" height="25" align="center" background="images/title_bg_show.gif">
+		<b><a href="admin_enorder.asp">&nbsp;&nbsp;&nbsp;&nbsp;教员预约学员</a></b></td>
+  </tr>
+  
 	<tr>
 	  <td height="25" align="center" background="images/title_bg_show.gif"><b><a href="webinfo.asp">网站信息设置</a></b></td>
   </tr>
@@ -58,27 +79,6 @@ end if
 		<td width="0" height="25" align="center" background="images/title_bg_show.gif">
 		<b><a href="admin_message.asp">站内短信管理</a></b></td>
   </tr>
-	<tr>
-		<td width="0" height="25" align="center" background="images/title_bg_show.gif">
-		<b><a href="admin_inuser.asp">学员用户管理</a></b></td>
-  </tr>
-  
-  	<tr>
-		<td width="0" height="25" align="center" background="images/title_bg_show.gif">
-		<b><a href="admin_inorder.asp">&nbsp;&nbsp;&nbsp;&nbsp;学员预约教员</a></b></td>
-  </tr>
-  
-    
-	<tr>
-		<td width="0" height="25" align="center" background="images/title_bg_show.gif">
-		<b><a href="admin_enuser.asp">教员用户管理</a></b></td>
-  </tr>
-
-  	<tr>
-		<td width="0" height="25" align="center" background="images/title_bg_show.gif">
-		<b><a href="admin_enorder.asp">&nbsp;&nbsp;&nbsp;&nbsp;教员预约学员</a></b></td>
-  </tr>
-  
   
 	<tr>
 		<td width="0" height="25" align="center" background="images/title_bg_show.gif"><b>

@@ -112,8 +112,8 @@ end if
 					</div>
 		　<p align="left"><b>提示：</b><p align="left">为保证数据的完整性，建议不要手动操作数据库。<p align="left">
 					<b>技术支持：</b>
-		<p align="left">QQ：1647706725
-		<p align="left">电子邮件：1647706725@qq.com
+		<p align="left">QQ：583164404
+		<p align="left">电子邮件：583164404@qq.com
 	  </td>
 	  <td bgcolor="#F1F3F5" height="504" align="center" valign="top" width="102">&nbsp;</td>
 	</tr>
