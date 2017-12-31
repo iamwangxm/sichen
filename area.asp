@@ -72,21 +72,18 @@ Function getarea(town,city)
 	set rss=nothing
 	
 	if town<>"" then '如果镇区为空
-		set rss=server.createobject("adodb.recordset")
-		sqls="select * from en_city where id="&int(town)
-		rss.open sqls,conn,1,1
-		if rss.recordcount<>0 then
-		   town1=rss("shiName")
+		set rssx=server.createobject("adodb.recordset")
+		sqlsx="select * from en_city where id="&int(town)
+		rssx.open sqlsx,conn,1,1
+		if rssx.recordcount<>0 then
+		   town1=rssx("shiName")
 		end if
-		rss.close
-		set rss=nothing
+		rssx.close
+		set rssx=nothing
     	getarea=town1
 	else
 	    getarea=city
 	end if
-	
-
-
 
 End Function
 

@@ -102,8 +102,6 @@ set rs=nothing
 set conn=nothing
 Response.Cookies("e_fullness")="ok"
 Response.Cookies("e_fullness").expires=(now+1/6) '保存4小时
-Response.Write request("mycity2")
-response.end
 response.write "<script language=JavaScript>" & chr(13) & "alert('信息更新成功！');" &"window.location.href='control.asp'"& "</script>" 
 
 %>
