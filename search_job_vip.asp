@@ -11,20 +11,20 @@ end if
 <script language=JavaScript>
 <%dim i_1,j_1
 	set rs_s=server.createobject("adodb.recordset")
-	sql="select * from city order by cityorder"
+	sql="select * from en_city where shiNo=1  order by Shengid"
 	rs_s.open sql,conn,1,1
 %>
 	var selects=[];
-	selects['0']=new Array(new Option('镇区不限','0'));
+	selects['0']=new Array(new Option('区县不限','0'));
 <%
 	for i=1 to rs_s.recordcount
 %>
-	selects['<%=rs_s("cityNo")%>']=new Array(
+	selects['<%=rs_s("id")%>']=new Array(
 
-new Option('选择镇区','0'),
+new Option('选择区县','0'),
 <%
 	set rs_s1=server.createobject("adodb.recordset")
-	sql="select * from town where Cityid="&rs_s("id")&" order by TownOrder"
+	sql="select * from en_city where shengid="&rs_s("shengid")&" order by shiOrder"
 	rs_s1.open sql,conn,1,1
 	if rs_s1.recordcount>0 then 
 	%>
@@ -33,10 +33,10 @@ new Option('选择镇区','0'),
 	<%		for j=1 to rs_s1.recordcount
 		if j=rs_s1.recordcount then 
 %>
-		new Option('<%=trim(rs_s1("townname"))%>','<%=trim(rs_s1("TownNo"))%>'));
+		new Option('<%=trim(rs_s1("shiName"))%>','<%=trim(rs_s1("id"))%>'));
 <%		else
 %>
-		new Option('<%=trim(rs_s1("townname"))%>','<%=trim(rs_s1("TownNo"))%>'),
+		new Option('<%=trim(rs_s1("shiName"))%>','<%=trim(rs_s1("id"))%>'),
 <%
 		end if
 		rs_s1.movenext
@@ -79,31 +79,31 @@ set rs_s=nothing
           <option value="0" selected>选择城市</option>
 		  <option value="0">不限</option>
           <%dim tmpCityid
-tmpCityid=0
-city=int(city)
-town=int(town)
-set rs1_s=server.createobject("adodb.recordset")
-sql2="select * from city  order by cityorder"
-rs1_s.open sql2,conn,1,1
-while not rs1_s.eof
-
-
-           if rs1_s("cityNo") =city  then
-     
-          tmpCityid=rs1_s("id")
-%>
-          <option value="<%=rs1_s("cityNo")%>" selected ><%=trim(rs1_s("cityName"))%></option>
-          <%
-     else
-%>
-          <option value="<%=rs1_s("cityNo")%>" ><%=trim(rs1_s("cityName"))%></option>
-            <%
-     end if        
- 
-    rs1_s.movenext
-wend
-rs1_s.close
-set rs1_s=nothing
+                                                tmpCityid=0
+                                                city=int(city)
+                                                town=int(town)
+                                                set rs1_s=server.createobject("adodb.recordset")
+                                                sql2="select * from en_city  where shiNo=1 order by Shengid"
+                                                rs1_s.open sql2,conn,1,1
+                                                while not rs1_s.eof
+                                                
+                                                
+                                                           if rs1_s("id") =city  then
+                                                     
+                                                          tmpCityid=rs1_s("Shengid")
+															%>
+                                                          <option value="<%=rs1_s("id")%>" selected ><%=trim(rs1_s("shiname"))%></option>
+                                                          <%
+                                                     else
+                                                %>
+                                                          <option value="<%=rs1_s("id")%>" ><%=trim(rs1_s("shiname"))%></option>
+                                                            <%
+                                                     end if        
+                                                 
+                                                    rs1_s.movenext
+                                                wend
+                                                rs1_s.close
+                                                set rs1_s=nothing
 %></select> 
 城市选择，可不选，表示不限
 
@@ -113,20 +113,20 @@ set rs1_s=nothing
 		  <td height="30">
 
            <select size="1" size="18" name="town"  style=" font-size: 12px; background-color: #ffffff" >
-                        <option value="0" >选择镇区</option>
+                        <option value="0" >选择区县</option>
  <%
-set rs1_s=server.createobject("adodb.recordset")
-sql2="select * from town where Cityid="&tmpCityid&" order by TownOrder"
-rs1_s.open sql2,conn,1,1
-while not rs1_s.eof
-%><option value="<%=rs1_s("TownNo")%>" <%if town=rs1_s("TownNo") then%>selected<%end if%>><%=trim(rs1_s("townname"))%></option>
-          <%
-    rs1_s.movenext
-wend
-rs1_s.close
-set rs1_s=nothing
+set rs1_x=server.createobject("adodb.recordset")
+                                                sql2="select * from en_city where Shengid="&tmpCityid&" order by shiOrder"
+                                                rs1_x.open sql2,conn,1,1
+                                                while not rs1_x.eof
+                                                %><option value="<%=rs1_x("id")%>" <%if town=rs1_x("id") then%>selected<%end if%>><%=trim(rs1_x("shiname"))%></option>
+                                                          <%
+                                                    rs1_x.movenext
+                                                wend
+                                                rs1_x.close
+                                                set rs1_x=nothing
 %>
-          </select> 可不选择，表示市内全部镇区。			  
+          </select> 可不选择，表示市内全部区县。			  
           </td>
 							  </tr>
 								<tr>
