@@ -206,7 +206,7 @@ set rs1_x=server.createobject("adodb.recordset")
                                                 set rs1_x=nothing
 %>
 					 </select><br>
-					 社区：<input name="xian" type="text" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" size="10" maxlength="8"></td>
+					 社区：<input name="xian" value=<%=rs("xian")%> type="text" style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" size="10" maxlength="8"></td>
 												<td height="40" width="44%">
 												<font color=#ff0000>不修改请不要设置；</font>如果无法选择镇区，请再点一下相应的城市后再选；如没有社区，请<font color=#ff0000>留空</font>，社区要在城市镇区存在的情况下才有效。</td>
 											</tr>

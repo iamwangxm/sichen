@@ -48,10 +48,10 @@ new Option('Ñ¡ÔñÇøÏØ','0'),
 	<%		for j=1 to rs_s1.recordcount
 		if j=rs_s1.recordcount then 
 %>
-		new Option('<%=trim(rs_s1("shiName"))%>','<%=trim(rs_s1("id"))%>'));
+		new Option('<%=trim(rs_s1("shiName"))%>','<%=trim(rs_s1("id"))&"|"&trim(rs_s("id"))%>'));
 <%		else
 %>
-		new Option('<%=trim(rs_s1("shiName"))%>','<%=trim(rs_s1("id"))%>'),
+		new Option('<%=trim(rs_s1("shiName"))%>','<%=trim(rs_s1("id"))&"|"&trim(rs_s("id"))%>'),
 <%
 		end if
 		rs_s1.movenext
